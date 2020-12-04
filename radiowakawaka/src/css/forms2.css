@@ -1,0 +1,232 @@
+html, head, body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+/*On large screens like tablet, laptop, large screen laptop ...*/
+
+@media screen and
+(min-width: 768px) and
+(max-width: 1600px) and
+(min-device-width: 768px) and
+(max-device-width: 1600px){
+    body{
+        display: flex;
+        flex-flow: row wrap-reverse;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        background: #E5E5E5 no-repeat;
+    }
+
+    h4{
+        font-size: medium;
+        color: #FFFFFF;
+        text-align: center;
+        margin-top: 15%;
+        margin-bottom: 2%;
+        margin-left: 16%;
+    }
+
+    input{
+        margin-bottom: 20px;
+        padding: 10px;
+        width: 18vw;
+        font-weight: lighter;
+        color: #C4C4C4;
+        font-size: small;
+    }
+
+    input, .form-buttons-group{
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .left{
+        width: 40vw;
+        height: 100vh;
+
+    }
+
+    .logo{
+        float: right;
+        height: 16.5%;
+        margin-top: 45%;
+        margin-bottom: 40%;
+    }
+
+    .right{
+        background: url("../img/Vector.png") no-repeat;
+        background-size: cover;
+        width: 60vw;
+        height: 100vh;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    .form-buttons-group{
+
+    }
+
+    .button{
+        font-family: 'Nunito', sans-serif;
+        font-size: medium;
+        font-weight: bold;
+        cursor: pointer;
+        margin-bottom: 20px;
+        padding: 10px;
+        height: 50%;
+        width: 100%;
+    }
+
+    .input-connexion{
+        margin-top: 80px;
+    }
+
+    #connexion{
+        width: 40%;
+        height: 65%;
+        margin-left: 36%;
+        margin-right: auto;
+        background: #FFFFFF;
+        border-radius: 3px;
+    }
+
+    #pass_link{
+        font-family: 'Nunito', sans-serif;
+        font-size: small;
+        font-weight: lighter;
+        color: #C4C4C4;
+        float: right;
+        margin-top: -15px;
+        padding-right: 6.7%;
+        padding-bottom: 75px;
+    }
+
+    #bnt1{
+        border: none;
+
+        background: #E86E25;
+        color: #FFFFFF;
+        border-radius: 3px;
+        margin-bottom: 20px;
+    }
+
+    #btn2{
+        border: 1px solid #E86E25;
+        box-sizing: border-box;
+        border-radius: 3px;
+        background: white;
+        color: #E86E25;
+    }
+}
+
+
+/*On small screen like mobiles L, M or S*/
+
+@media screen and
+(min-width: 320px) and
+(max-width: 767px),
+(min-device-width: 320px) and
+(max-device-width: 767px){
+
+    body{
+        background: #642D91;
+        height: 100vh;
+    }
+
+    h4{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -10px;
+        font-family: Nunito, sans-serif;
+        font-size: large;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+    }
+
+    input{
+        display: block;
+        height: 30px;
+        width: 40vw;
+        margin-bottom: 20px;
+        border: 1px solid #C4C4C4;
+        border-radius: 3px;
+        padding: 6px 15px;
+        font-family: Nunito, sans-serif;
+        font-size: x-small;
+    }
+
+    button{
+        font-family: 'Nunito', sans-serif;
+        color: #FFFFFF;
+        font-size: large;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+        border-radius: 3px;
+        margin: 20px auto 0 auto;
+        width: 45vw;
+        padding: 5% 10% 5% 10%;
+
+    }
+
+    #bnt1{
+        background: #E86E25;
+    }
+
+    #btn2{
+        color: #E86E25;
+        border: 1px solid #E86E25;
+    }
+
+    #pass_link{
+        font-family: 'Nunito', sans-serif;
+        font-size: 10px;
+        font-weight: lighter;
+        color: #C4C4C4;
+        flex-flow: row;
+        margin-top: -10px;
+        text-align: right;
+    }
+
+    .left{
+        display: none;
+    }
+
+    .right{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .form{
+        background: #FFFFFF;
+        border-radius: 3px;
+        padding: 15% 5% 10% 5%;
+        max-width: max-content;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .form-buttons-group{
+        display: flex;
+        flex-flow: column;
+        margin: 30% auto 0 auto;
+        text-align: center;
+    }
+}

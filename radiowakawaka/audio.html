@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Audio</title>
+    <link href="src/css/medias.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="menu" style="display: none; animation: slideOut 1s forwards 0s linear;">
+        <svg style="cursor: pointer" onclick="document.getElementById('menu').style.display = 'none'; anime()" id="menu-close" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="25" cy="25" r="25" fill="white"/>
+            <rect x="15" y="33" width="25" height="3" transform="rotate(-45 15 33)" fill="#E86E25"/>
+            <rect x="17" y="15" width="25" height="3" transform="rotate(45 17 15)" fill="#E86E25"/>
+        </svg>
+
+        <div id="search">
+            <svg id="search-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.33738 14.5205L5.05038 10.9505C6.14156 11.8684 7.51448 12.3713 8.94376 12.3713C12.2831 12.3713 15 9.65445 15 6.31509C15 2.97573 12.2831 0.25885 8.94376 0.25885C5.6044 0.25885 2.88751 2.97573 2.88751 6.31509C2.88751 7.56874 3.26563 8.7634 3.98343 9.78479L0.242249 13.3819C0.0861029 13.5323 -5.8904e-07 13.7345 -5.98513e-07 13.9512C-6.07479e-07 14.1563 0.0782035 14.3509 0.220394 14.4987C0.522415 14.8125 1.02324 14.8225 1.33738 14.5205ZM13.4201 6.31509C13.4201 8.78341 11.4121 10.7914 8.94376 10.7914C6.47544 10.7914 4.4674 8.78341 4.4674 6.31509C4.4674 3.84678 6.47544 1.83874 8.94376 1.83874C11.4121 1.83874 13.4201 3.84678 13.4201 6.31509Z"
+                    fill="white"/>
+            </svg>
+            <input id="search-input" type="search" onkeyup="search()">
+        </div>
+        <ul id="list" style="display: none; background-color: #FFFFFF;"></ul>
+
+        <h2>
+            <a href="#">Lifestyle</a>
+        </h2>
+        <h2>
+            <a href="#">People</a>
+        </h2>
+        <h2>
+            <a href="#">Buzz</a>
+        </h2>
+
+        <svg id="hr" width="390" height="1" viewBox="0 0 390 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="-4.37114e-08" y1="0.5" x2="390" y2="0.499966" stroke="white" stroke-opacity="0.5"/>
+        </svg>
+
+
+        <h2>
+            <a href="musique.html">Playlist</a>
+        </h2>
+        <h2>
+            <a href="musique.html">Vidéos</a>
+        </h2>
+        <h2>
+            <a href="musique.html">Téléchargements</a>
+        </h2>
+
+        <svg id="hr" width="390" height="1" viewBox="0 0 390 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="-4.37114e-08" y1="0.5" x2="390" y2="0.499966" stroke="white" stroke-opacity="0.5"/>
+        </svg>
+
+        <div class="social2">
+            <img class="img" src="src/img/facebook.png" alt="facebook">
+            <img class="img" src="src/img/twitter.png" alt="twitter">
+            <img class="img" src="src/img/whatsapp.png" alt="whatsapp">
+        </div>
+    </div>
+    <header class="header">
+        <a href="index.html">
+            <img alt="logo" class="logo" src="src/img/logo-mini.png">
+        </a>
+        
+        <img draggable="false" alt="menu" class="menu" src="src/img/menu.png" onclick="document.getElementById('menu').style.display = 'block'; document.getElementById('menu').style.zIndex = 9; anime()">
+        
+    </header>
+    <div class="audio">
+        <div class="lecteur">
+            <img alt="cover" class="cover" src="src/img/trailer-tension-album-cover-3d-design-1000x1000.jpg">
+            <img alt="pause" class="pause" id="play" onclick="play()" src="src/img/pause.png" style="display: none" draggable="false">
+            <img alt="pause" class="pause" id="pause" onclick="play()" src="src/img/play_it.png" draggable="false">
+            <div id="lecture">
+                <h3 id="artist-cover">Zeynab Habib</h3>
+                <h6 id="titre-cover">I No Go Die</h6>
+            </div>
+            <audio controls id="audio" src="src/audios/zeynab_i_no_go_die_clip_officiel_mp3_54191.mp3"
+                style="display: none"></audio>
+        </div>
+        <div class="infos">
+            <h2 class="artist">Zeynab Habib</h2>
+            <h5 class="titre">I No Go Die</h5>
+        </div>
+        <a class="link" href="src/audios/zeynab_i_no_go_die_clip_officiel_mp3_54191.mp3" download="I_No_Go_Die">
+            <button class="download-button" type="button">
+                <img alt="download" class="download" src="src/img/download.png">
+                Télécharger
+            </button>
+        </a>
+        <div class="partage">
+            Vous avez aimé ? Partagez:
+            <div class="partager">
+                <img alt="facebook" class="social" src="src/img/facebook2.png" draggable="false">
+                <img alt="twitter" class="social" src="src/img/twitter2.png" draggable="false">
+                <img alt="whatsapp" class="social" src="src/img/whatsapp2.png" draggable="false">
+            </div>
+        </div>
+    </div>
+    <hr class="orange">
+    <hr class="violet">
+
+    <script>
+        function play() {
+            const audio = document.getElementById('audio');
+            const B_play = document.getElementById('play');
+            const B_pause = document.getElementById('pause');
+
+            if (audio.paused) {
+                audio.play();
+                B_play.style.display = 'block';
+                B_pause.style.display = 'none';
+            } else {
+                audio.pause();
+                B_play.style.display = 'none';
+                B_pause.style.display = 'block';
+            }
+        }
+    </script>
+    <script src="src/js/animation_menu.js"></script>
+    <script type="text/javascript" src="src/js/search.js"></script>
+</body>
+</html>

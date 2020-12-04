@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/account.css">
+    <title>Mes achats</title>
+</head>
+<body>
+<!-- T H E   M E N U   A T   T H E   L E F T -->
+<div id="left">
+    <a href="index.html">
+        <img src="src/img/logo-mini.png" id="logo" alt="logo">
+    </a>
+    <svg id="menu-burger" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="document.getElementById('menu').style.display='flex'; menu()">
+        <circle cx="25" cy="25" r="25" fill="white"/>
+        <rect x="13" y="15" width="25" height="3" fill="#E86E25"/>
+        <rect x="13" y="23" width="25" height="3" fill="#E86E25"/>
+        <rect x="13" y="31" width="25" height="3" fill="#E86E25"/>
+    </svg>
+    <div id="menu">
+        <svg id="close" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="document.getElementById('menu').style.display='none'; menu()">
+            <circle cx="25" cy="25" r="25" fill="white"/>
+            <rect x="15" y="33" width="25" height="3" transform="rotate(-45 15 33)" fill="#E86E25"/>
+            <rect x="17" y="15" width="25" height="3" transform="rotate(45 17 15)" fill="#E86E25"/>
+        </svg>
+        <a href="index.html">
+            <h4>Accueil</h4>
+        </a>
+        <a  href="musique.html">
+            <h4>Musique</h4>
+        </a>
+        <a class="active" href="#">
+            <h4>Mes achats</h4>
+        </a>
+        <a href="account.html">
+            <h4>Mon compte</h4>
+        </a>
+        <a href="logout.html">
+            <h4>Déconnexion</h4>
+        </a>
+    </div>
+</div>
+
+    <!-- T H E   C O N T A I N E R   A T   T H E   R I G H T -->
+    <div id="right">
+        <h1>Mes Achats</h1>
+        <div id="musics">
+            <div class="music">
+                <div class="cover">
+                    <img src="src/img/album_cover.png" draggable="false" alt="cover" class="album-cover">
+                    <svg class="play-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="20" fill="#642D91"/>
+                        <path d="M24.5714 20L16 11.4286V28.5714L24.5714 20Z" fill="white"/>
+                    </svg>
+
+                </div>
+
+                <div class="info">
+                    <div class="ligne1">
+                        <h3 class="Auteur">Nicki Minaj</h3>
+                        <h5 class="Minutes">03:20</h5>
+                    </div>
+
+                    <h5 class="Titre">Anaconda</h5>
+
+                    <div class="ligne2">
+                        <h5 class="Vues">2k vues</h5>
+                        <svg class="point" width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2.5" cy="2.5" r="2.5" fill="#C4C4C4"/>
+                        </svg>
+                        <h5 class="Telechargements">23k Téléchargements</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="music">
+                <div class="cover">
+                    <img src="src/img/album_cover.png" draggable="false" alt="cover" class="album-cover">
+                    <svg class="play-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="20" fill="#642D91"/>
+                        <path d="M24.5714 20L16 11.4286V28.5714L24.5714 20Z" fill="white"/>
+                    </svg>
+
+                </div>
+
+                <div class="info">
+                    <div class="ligne1">
+                        <h3 class="Auteur">Nicki Minaj</h3>
+                        <h5 class="Minutes">03:20</h5>
+                    </div>
+
+                    <h5 class="Titre">Anaconda</h5>
+
+                    <div class="ligne2">
+                        <h5 class="Vues">2k vues</h5>
+                        <svg class="point" width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2.5" cy="2.5" r="2.5" fill="#C4C4C4"/>
+                        </svg>
+                        <h5 class="Telechargements">23k Téléchargements</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="music">
+                <div class="cover">
+                    <img src="src/img/album_cover.png" draggable="false" alt="cover" class="album-cover">
+                    <svg class="play-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="20" fill="#642D91"/>
+                        <path d="M24.5714 20L16 11.4286V28.5714L24.5714 20Z" fill="white"/>
+                    </svg>
+
+                </div>
+
+                <div class="info">
+                    <div class="ligne1">
+                        <h3 class="Auteur">Nicki Minaj</h3>
+                        <h5 class="Minutes">03:20</h5>
+                    </div>
+
+                    <h5 class="Titre">Anaconda</h5>
+
+                    <div class="ligne2">
+                        <h5 class="Vues">2k vues</h5>
+                        <svg class="point" width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2.5" cy="2.5" r="2.5" fill="#C4C4C4"/>
+                        </svg>
+                        <h5 class="Telechargements">23k Téléchargements</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="music">
+                <div class="cover">
+                    <img src="src/img/album_cover.png" draggable="false" alt="cover" class="album-cover">
+                    <svg class="play-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="20" fill="#642D91"/>
+                        <path d="M24.5714 20L16 11.4286V28.5714L24.5714 20Z" fill="white"/>
+                    </svg>
+
+                </div>
+
+                <div class="info">
+                    <div class="ligne1">
+                        <h3 class="Auteur">Nicki Minaj</h3>
+                        <h5 class="Minutes">03:20</h5>
+                    </div>
+
+                    <h5 class="Titre">Anaconda</h5>
+
+                    <div class="ligne2">
+                        <h5 class="Vues">2k vues</h5>
+                        <svg class="point" width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2.5" cy="2.5" r="2.5" fill="#C4C4C4"/>
+                        </svg>
+                        <h5 class="Telechargements">23k Téléchargements</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="music">
+                <div class="cover">
+                    <img src="src/img/album_cover.png" draggable="false" alt="cover" class="album-cover">
+                    <svg class="play-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="20" fill="#642D91"/>
+                        <path d="M24.5714 20L16 11.4286V28.5714L24.5714 20Z" fill="white"/>
+                    </svg>
+
+                </div>
+
+                <div class="info">
+                    <div class="ligne1">
+                        <h3 class="Auteur">Nicki Minaj</h3>
+                        <h5 class="Minutes">03:20</h5>
+                    </div>
+
+                    <h5 class="Titre">Anaconda</h5>
+
+                    <div class="ligne2">
+                        <h5 class="Vues">2k vues</h5>
+                        <svg class="point" width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2.5" cy="2.5" r="2.5" fill="#C4C4C4"/>
+                        </svg>
+                        <h5 class="Telechargements">23k Téléchargements</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="music">
+                <div class="cover">
+                    <img src="src/img/album_cover.png" draggable="false" alt="cover" class="album-cover">
+                    <svg class="play-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="20" fill="#642D91"/>
+                        <path d="M24.5714 20L16 11.4286V28.5714L24.5714 20Z" fill="white"/>
+                    </svg>
+
+                </div>
+
+                <div class="info">
+                    <div class="ligne1">
+                        <h3 class="Auteur">Nicki Minaj</h3>
+                        <h5 class="Minutes">03:20</h5>
+                    </div>
+
+                    <h5 class="Titre">Anaconda</h5>
+
+                    <div class="ligne2">
+                        <h5 class="Vues">2k vues</h5>
+                        <svg class="point" width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2.5" cy="2.5" r="2.5" fill="#C4C4C4"/>
+                        </svg>
+                        <h5 class="Telechargements">23k Téléchargements</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="music">
+                <div class="cover">
+                    <img src="src/img/album_cover.png" draggable="false" alt="cover" class="album-cover">
+                    <svg class="play-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="20" fill="#642D91"/>
+                        <path d="M24.5714 20L16 11.4286V28.5714L24.5714 20Z" fill="white"/>
+                    </svg>
+
+                </div>
+
+                <div class="info">
+                    <div class="ligne1">
+                        <h3 class="Auteur">Nicki Minaj</h3>
+                        <h5 class="Minutes">03:20</h5>
+                    </div>
+
+                    <h5 class="Titre">Anaconda</h5>
+
+                    <div class="ligne2">
+                        <h5 class="Vues">2k vues</h5>
+                        <svg class="point" width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2.5" cy="2.5" r="2.5" fill="#C4C4C4"/>
+                        </svg>
+                        <h5 class="Telechargements">23k Téléchargements</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="music">
+                <div class="cover">
+                    <img src="src/img/album_cover.png" draggable="false" alt="cover" class="album-cover">
+                    <svg class="play-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="20" fill="#642D91"/>
+                        <path d="M24.5714 20L16 11.4286V28.5714L24.5714 20Z" fill="white"/>
+                    </svg>
+
+                </div>
+
+                <div class="info">
+                    <div class="ligne1">
+                        <h3 class="Auteur">Nicki Minaj</h3>
+                        <h5 class="Minutes">03:20</h5>
+                    </div>
+
+                    <h5 class="Titre">Anaconda</h5>
+
+                    <div class="ligne2">
+                        <h5 class="Vues">2k vues</h5>
+                        <svg class="point" width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2.5" cy="2.5" r="2.5" fill="#C4C4C4"/>
+                        </svg>
+                        <h5 class="Telechargements">23k Téléchargements</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="music">
+                <div class="cover">
+                    <img src="src/img/album_cover.png" draggable="false" alt="cover" class="album-cover">
+                    <svg class="play-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="20" fill="#642D91"/>
+                        <path d="M24.5714 20L16 11.4286V28.5714L24.5714 20Z" fill="white"/>
+                    </svg>
+
+                </div>
+
+                <div class="info">
+                    <div class="ligne1">
+                        <h3 class="Auteur">Nicki Minaj</h3>
+                        <h5 class="Minutes">03:20</h5>
+                    </div>
+
+                    <h5 class="Titre">Anaconda</h5>
+
+                    <div class="ligne2">
+                        <h5 class="Vues">2k vues</h5>
+                        <svg class="point" width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2.5" cy="2.5" r="2.5" fill="#C4C4C4"/>
+                        </svg>
+                        <h5 class="Telechargements">23k Téléchargements</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="music">
+                <div class="cover">
+                    <img src="src/img/album_cover.png" draggable="false" alt="cover" class="album-cover">
+                    <svg class="play-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="20" fill="#642D91"/>
+                        <path d="M24.5714 20L16 11.4286V28.5714L24.5714 20Z" fill="white"/>
+                    </svg>
+
+                </div>
+
+                <div class="info">
+                    <div class="ligne1">
+                        <h3 class="Auteur">Nicki Minaj</h3>
+                        <h5 class="Minutes">03:20</h5>
+                    </div>
+
+                    <h5 class="Titre">Anaconda</h5>
+
+                    <div class="ligne2">
+                        <h5 class="Vues">2k vues</h5>
+                        <svg class="point" width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2.5" cy="2.5" r="2.5" fill="#C4C4C4"/>
+                        </svg>
+                        <h5 class="Telechargements">23k Téléchargements</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg id="ajout_musique" width="107" height="107" viewBox="0 0 107 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d)">
+                <circle cx="53.5" cy="53.5" r="33.5" fill="#E86E25"/>
+            </g>
+            <path d="M68.328 55.632V50.26H56.156V37H50.24V50.26H38V55.632H50.24V69.436H56.156V55.632H68.328Z" fill="white"/>
+            <defs>
+                <filter id="filter0_d" x="0" y="0" width="107" height="107" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                    <feOffset/>
+                    <feGaussianBlur stdDeviation="10"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.31 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                </filter>
+            </defs>
+        </svg>
+    </div>
+
+    <script>
+        function menu() {
+            if(document.getElementById('menu').style.display === 'flex'){
+                document.getElementById('right').style.visibility = 'hidden';
+            }else if(document.getElementById('menu').style.display === 'none'){
+                document.getElementById('right').style.visibility = 'visible';
+            }
+        }
+    </script>
+</body>
+</html>

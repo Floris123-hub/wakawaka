@@ -1,0 +1,493 @@
+html, head, body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+}
+
+@keyframes slideOut{
+    0%{
+        transform: rotate(0) translateX(100%);
+        opacity: 0;
+        }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+        }
+}
+
+
+/*On large screens like tablet, laptop, large screen laptop ...*/
+
+@media screen and
+(min-width: 768px) and
+(max-width: 1600px) and
+(min-device-width: 768px) and
+(max-device-width: 1600px){
+    body{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        background: #FFFFFF;
+    }
+
+    h4{
+        font-weight: lighter;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    h4, #logo{
+        margin-left: 25px;
+    }
+
+    h2{
+        position: absolute;
+        width: 223px;
+        height: 44px;
+        left: 240px;
+        top: 45px;
+
+
+        font-size: 36px;
+        line-height: 44px;
+
+        display: flex;
+        align-items: center;
+
+        color: #000000;
+        margin-top: 0;
+    }
+
+    label{
+        cursor: pointer;
+    }
+
+    input{
+        display: block;
+        width: 80%;
+        height: 50px;
+
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 3px;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 7%;
+        padding: 15px;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    #menu-burger{
+        display: none;
+    }
+
+    #close{
+        display: none;
+    }
+
+    #left{
+        background: #F1F2F2;
+        float: left;
+        height: 100vh;
+        position: fixed;
+        padding-top: 29px;
+        width: 150px;
+        left: -1px;
+    }
+
+    #logo{
+        height: 25px;
+        width: 106px;
+        left: 25px;
+        top: 29px;
+        margin-bottom: 29px;
+    }
+
+    #right{
+        min-height: 100%;
+        margin-left: 200px;
+    }
+
+    #div-one{
+        height: 350px;
+        width: 320px;
+        float: left;
+    }
+
+    #icon-user{
+        position: absolute;
+        left: 261px;
+        top: 155px;
+
+        color: #C4C4C4;
+    }
+
+    #profile-pic{
+        display: none;
+    }
+
+    #icon-camera{
+        position: absolute;
+        width: 175px;
+        height: 18px;
+        left: 250px;
+        top: 293px;
+        font-weight: bold;
+        font-size: small;
+        color: #C4C4C4;
+    }
+
+    #div-two{
+        margin-left: 27.4%;
+        height: 500px;
+        width: inherit;
+        padding-top: 53px;
+    }
+
+    #save{
+        width: 340px;
+        height: 50px;
+        margin-top: 10%;
+        background: #E86E25;
+        border-radius: 3px;
+        border: none;
+        color: #FFFFFF;
+        font-family: Nunito, sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .active{
+        color: #E86E25;
+        font-weight: 900;
+        border-left: solid 3px #E86E25;
+        width: 30px;
+        display: flex;
+        height: max-content;
+    }
+
+    .div-left, .div-right{
+        height: max-content;
+        width: 49.5%;
+    }
+
+    .div-left{
+        float: left;
+    }
+
+    .div-right{
+        margin-left: 50%;
+    }
+
+    .div-bottom{
+        height: 19%;
+        margin-left: 40px;
+        width: max-content;
+    }
+
+
+    /* C S S   O F   T H E   M U S I C S   P A G E */
+    h1{
+        margin-left: 29px;
+        margin-bottom: 0;
+        padding-top: 20px;
+    }
+    #musics{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+
+    .music{
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    .cover{
+        width: 160px;
+        height: 160px;
+        text-align: center;
+    }
+
+    .album-cover{
+        height: 160px;
+        width: 160px;
+        border-radius: 5px;
+    }
+
+    .play-icon{
+        cursor: pointer;
+        position: relative;
+        left: 2%;
+        top: -67%;
+    }
+
+    .info{
+        display: flex;
+        flex-flow: column;
+    }
+
+    .ligne1, .ligne2{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        width: 160px;
+        font-size: 13px;
+    }
+
+    h5, h3{
+        margin: 0;
+    }
+
+    .point{
+        margin-top: 5px;
+    }
+
+    .Minutes, .Titre, .Vues, .Telechargements{
+        font-weight: lighter;
+        color: #888787;
+    }
+
+    #ajout_musique{
+        position: absolute;
+        right: 30px;
+        height: 70px;
+        width: 70px;
+    }
+}
+
+
+/*On small screens like mobiles L, M or S*/
+
+@media screen and
+(min-width: 320px) and
+(max-width: 767px),
+(min-device-width: 320px) and
+(max-device-width: 767px){
+    body{
+        background: #FFFFFF;
+        height: max-content;
+    }
+
+    h2{
+        font-family: Nunito, sans-serif;
+        font-weight: bolder;
+        font-size: xx-large;
+        margin-left: 5%;
+        margin-top: 0;
+        letter-spacing: 1px;
+    }
+
+    label{
+        color: #C4C4C4;
+    }
+
+    input{
+        display: block;
+        margin-top: 7%;
+        margin-left: 5%;
+        width: 80%;
+        border-radius: 5px;
+        font-size: large;
+        padding: 3% 0 3% 5%;
+        border: solid 1px #C4C4C4;
+        font-family: Nunito, sans-serif;
+    }
+
+    button{
+        background: #E86E25;
+        color: #FFFFFF;
+        font-family: Nunito, sans-serif;
+        font-weight: bold;
+        height: 50px;
+        width: 100%;
+        border-radius: 5px;
+        font-size: large;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 0;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: xx-large;
+    }
+
+    h4{
+        font-weight: 900;
+        margin: 10px 0 10px 30px;
+    }
+
+    #logo{
+        margin-top: 25px;
+        margin-left: 5%;
+        height: 20%;
+        width: 25%;
+    }
+
+    #menu-burger{
+        color: #E86E25;
+        float: right;
+        margin-top: 15px;
+        margin-right: 5%;
+        cursor: pointer;
+    }
+
+    #close{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+    }
+
+    #menu{
+        position: fixed;
+        display: none;
+        flex-flow: column;
+        justify-content: center;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+        background: #F1F2F2;
+        animation: slideOut 1s forwards 0s linear;
+    }
+
+    #icon-user{
+        font-size: 350px;
+        margin-left: 30%;
+        margin-right: auto;
+    }
+
+    #profile-pic{
+        display: none;
+    }
+
+    #icon-camera{
+        text-align: center;
+        color: #888787;
+        margin-top: 2.5%;
+        margin-left: -6%;
+        margin-bottom: 5%;
+    }
+
+    .active{
+        color: #E86E25;
+        font-weight: 900;
+        border-left: solid 3px #E86E25;
+        width: 30px;
+        display: flex;
+        height: max-content;
+    }
+
+    .div-left, .div-right{
+        border: dashed 1px transparent;
+    }
+
+    .div-right{
+        margin-bottom: 25%;
+    }
+
+    .div-bottom{
+        float: bottom;
+        position: fixed;
+        bottom: 0;
+        width: 85%;
+        height: 70px;
+        left: 7%;
+        background: #FFFFFF;
+    }
+
+
+    /* C S S   O F   T H E   M U S I C S   P A G E */
+    h1{
+        margin-left: 16px;
+    }
+
+    #musics{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    .music{
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    .cover{
+        width: 100%;
+        height: 280px;
+        text-align: center;
+    }
+
+    .album-cover{
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .play-icon{
+        cursor: pointer;
+        position: relative;
+        left: 1%;
+        top: -58%;
+    }
+
+    .info{
+        display: flex;
+        flex-flow: column;
+        margin-top: 10px;
+    }
+
+    .ligne1, .ligne2{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .ligne2{
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-start;
+    }
+
+    h5, h3{
+        margin: 0;
+    }
+
+    .point{
+        margin-top: 5px;
+    }
+
+    .Minutes, .Titre, .Vues, .Telechargements{
+        font-weight: lighter;
+        color: #888787;
+    }
+
+    #ajout_musique{
+        position: absolute;
+        right: 30px;
+        height: 70px;
+        width: 70px;
+    }
+}

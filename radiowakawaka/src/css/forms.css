@@ -1,0 +1,223 @@
+html, head, body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+/*On large screens like tablet, laptop, large screen laptop ...*/
+
+@media screen and
+(min-width: 768px) and
+(max-width: 1600px) and
+(min-device-width: 768px) and
+(max-device-width: 1600px) {
+    body{
+        display: flex;
+        flex-flow: row wrap-reverse;
+        width: 100%;
+        height: 100vh;
+        background: #E5E5E5 no-repeat;
+    }
+
+    h4{
+        color: #FFFFFF;
+        text-align: center;
+        margin-top: 15%;
+        margin-bottom: 2%;
+        margin-left: 16%;
+    }
+
+    input{
+        margin-bottom: 20px;
+        padding: 10px;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .form-buttons-group{
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .left{
+        //float: left;
+        height: 100vh;
+        width: 40vw;
+
+    }
+
+    .logo{
+        float: right;
+        height: 16.5%;
+        margin-top: 45%;
+        margin-bottom: 40%;
+    }
+
+    .right{
+        //position: absolute;
+        background: url("../img/Vector.png") no-repeat;
+        background-size: cover;
+        //float: right;
+        //left: 40%;
+        height: 100vh;
+        width: 60vw;
+    }
+
+    .form{
+        width: 45%;
+        height: 65%;
+        margin-left: auto;
+        margin-right: 20%;
+        background: #FFFFFF;
+        border-radius: 3px;
+    }
+
+    .form-buttons-group{
+        width: 95%;
+        height: 10%;
+        margin: 10% auto 0 auto;
+    }
+
+    .button{
+        font-family: 'Nunito', sans-serif;
+        font-size: medium;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .input-connexion{
+        margin-top: 80px;
+    }
+
+    #form-container{
+        display: flex;
+        flex-flow: column;
+        padding: 70px 10px 30px 10px;
+    }
+
+    #bnt1{
+        border: none;
+        width: 100%;
+        height: 40px;
+
+        background: #E86E25;
+        color: #FFFFFF;
+        border-radius: 3px;
+        margin-bottom: 20px;
+    }
+
+    #btn2{
+        width: 100%;
+        height: 40px;
+
+        border: 1px solid #E86E25;
+        box-sizing: border-box;
+        border-radius: 3px;
+        background: white;
+        color: #E86E25;
+    }
+}
+
+
+/*On small screens like mobiles L, M or S*/
+
+@media screen and
+(min-width: 320px) and
+(max-width: 767px),
+(min-device-width: 320px) and
+(max-device-width: 767px) {
+
+    body{
+        background: #642D91;
+        height: 100vh;
+    }
+
+    h4{
+        font-family: Nunito, sans-serif;
+        font-size: large;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 30px;
+    }
+
+    input{
+        display: block;
+        height: 30px;
+        width: 40vw;
+        margin-bottom: 20px;
+        border: 1px solid #C4C4C4;
+        border-radius: 3px;
+        padding: 6px 15px;
+        font-family: Nunito, sans-serif;
+        font-size: x-small;
+    }
+
+    button{
+        font-family: 'Nunito', sans-serif;
+        color: #FFFFFF;
+        font-size: large;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+        border-radius: 3px;
+        margin: 20px auto 0 auto;
+        width: 45vw;
+        padding: 5% 10% 5% 10%;
+
+    }
+
+    #bnt1{
+        background: #E86E25;
+    }
+
+    #btn2{
+        color: #E86E25;
+        border: 1px solid #E86E25;
+    }
+
+    #pass_link{
+        font-family: 'Nunito', sans-serif;
+        font-size: smaller;
+        font-weight: lighter;
+        color: #C4C4C4;
+        float: right;
+        margin-left: auto;
+    }
+
+    .left{
+        display: none;
+    }
+
+    .right{
+        height: 100vh;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .form{
+        background: #FFFFFF;
+        border-radius: 3px;
+        padding: 15% 5% 10% 5%;
+        max-width: max-content;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .form-buttons-group{
+        display: flex;
+        flex-flow: column;
+        width: max-content;
+        margin-top: 40px;
+    }
+}

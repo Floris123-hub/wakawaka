@@ -1,0 +1,467 @@
+html, head, body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    font-family: Nunito, sans-serif;
+}
+
+*{
+    font-family: Nunito, sans-serif;
+}
+
+@keyframes slideOut{
+    0%{
+        transform: rotate(0) translateX(100%);
+        opacity: 0;
+        }
+    100%{
+        transform: translateX(1px);
+        opacity: 1;
+        }
+}
+
+/* #menu{
+    animation: slideOut 1s forwards 0s linear;
+} */
+
+
+@keyframes slideIn{
+    0%{
+        transform: translateX(0%);
+        opacity: 1;
+        }
+    100%{
+        transform: rotate(xx) translateX(100%);
+        opacity: 0;
+        }
+}
+
+/* #menu{
+    animation: slideIn 1s forwards 0s linear;
+} */
+
+@keyframes zoomIO{
+    0%{
+        transform: scale(1);
+        }
+    50%{
+        transform: scale(1.2);
+        }
+    100%{
+        transform: rotate(xx) scale(1);
+        }
+}
+
+.section:hover{
+    animation: zoomIO 1s forwards 0s ease-in-out;
+}
+
+
+/*On large screens like tablet, laptop, large screen laptop ...*/
+
+@media screen and
+(min-width: 768px) and
+(max-width: 1600px) and
+(min-device-width: 768px) and
+(max-device-width: 1600px)
+{
+    html{
+        height: 100vh;
+    }
+
+    body{
+        height: 100vh;
+        width: 100vw;
+    }
+
+    hr{
+        display: none;
+    }
+
+    #background{
+        display: flex;
+        flex-flow: row nowrap;
+        height: 100vh;
+    }
+
+    .section, .Section{
+        height: 100%;
+        width: 99.71%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        cursor: pointer;
+        border-left: solid 0.1px rgb(199, 197, 197);
+    }
+
+
+    h4, h5, h6{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #section1{
+        background: url("../img/bg1.jpg") no-repeat;
+        background-size: cover;
+    }
+
+    #section2{
+        background: url("../img/bg2_music.jpg") no-repeat;
+        background-size: cover;
+    }
+
+    #section3{
+        background: url("../img/bg3.jpg") no-repeat;
+        background-size: cover;
+    }
+
+    #section4{
+        background: url("../img/nm1.jpg") no-repeat;
+        background-size: cover;
+    }
+
+    #logo{
+        position: absolute;
+        top: 4%;
+        left: 2%;
+        cursor: pointer;
+    }
+
+    #menu-burger{
+        position: absolute;
+        top: 3.5%;
+        left: 95%;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+    }
+
+    #icon-live{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 80px;
+        width: 110px;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+    #text-live{
+        position: absolute;
+        bottom: 20px;
+        right: 45px;
+        color: #FFFFFF; font-family: Nunito, sans-serif;
+        font-size: smaller;
+    }
+
+    #social1{
+        position: absolute;
+        top: 94%;
+        left: 2.5%;
+        height: auto;
+    }
+
+    #facebook, #twitter, #whatsapp{
+        height: 20px;
+        margin-left: 3px;
+        margin-right: 3px;
+        cursor: pointer;
+    }
+
+    #navigation{
+        position: absolute;
+        top: 28%;
+        height: auto;
+        width: 100%;
+    }
+
+    #prev, #next{
+        height: 40px;
+        width: 40px;
+        margin-right: 2%;
+        margin-left: 2%;
+        cursor: pointer;
+    }
+
+    #next{
+        float: right;
+    }
+
+    #resume-sec1{
+        margin-left: 25px;
+        margin-right: 65px;
+        font-size: 19px;
+    }
+
+    #resume-sec4{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: -20px;
+        font-size: 19px;
+    }
+
+    #resume-sec2{
+        margin-right: 30%;
+        margin-left: 30%;
+        text-align: center;
+    }
+
+    #resume-sec3{
+        margin-right: 30%;
+        margin-left: 35%;
+        text-align: center;
+    }
+
+    .resume{
+        margin-top: 50px;
+        color: #FFFFFF;
+    }
+
+    .categorie{
+        background: #E86E25;
+        width: 65px;
+        padding: 3px;
+        border-radius: 50px;
+        font-size: x-small;
+        text-align: center;
+    }
+
+    .center{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .text{
+        font-size:larger;
+    }
+
+    .play{
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+    }
+
+    .song-title{
+        font-size: xx-small;
+        font-weight: lighter;
+    }
+
+    .see-more, .buy{
+        background: #642D91;
+        width: 77px;
+        padding: 4px;
+        border-radius: 3px;
+        font-size: 12px;
+        margin-top: 20%;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .see-more{
+        margin-top: 15%;
+    }
+
+    .buy{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .social3, .see-more2{
+        display: none;
+    }
+}
+
+
+/*On small screens like mobiles L, M or S*/
+
+@media screen and
+(min-width: 320px) and
+(max-width: 767px),
+(min-device-width: 320px) and
+(max-device-width: 767px)
+{
+    hr{
+        color: #E86E25;
+        border: solid 3px #E86E25;
+        width: 65%;
+        margin: 0;
+        position: fixed;
+    }
+
+    .section{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        padding-top: 90vh;
+        height: 100vh;
+        width: 100%;
+    }
+
+    a{
+        text-decoration: none;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+
+    #background{
+        display: flex;
+        flex-flow: column-reverse;
+        height: 100vh;
+        margin: 0;
+        position: fixed;
+    }
+
+    #section1{
+        background: url("../img/bg1.jpg") no-repeat;
+        background-size: cover;
+    }
+
+    #section2{
+        background: url("../img/bg2_music.jpg") no-repeat;
+        background-size: cover;
+    }
+
+    #section3{
+        background: url("../img/bg3.jpg") no-repeat;
+        background-size: cover;
+    }
+
+    #section4{
+        background: url("../img/nm1.jpg") no-repeat;
+        background-size: cover;
+    }
+
+    #logo{
+        position: absolute;
+        top: 30px;
+        left: 38px;
+    }
+
+    #menu-burger{
+        position: absolute;
+        top: 20px;
+        right: 30px;
+    }
+
+    #navigation{
+        position: absolute;
+        top: 35%;
+        width: 100%;
+    }
+
+    #next{
+        float: right;
+    }
+
+    #prev, #next{
+        height: 35px;
+        width: 35px;
+        margin: 0 30px 0 30px;
+    }
+
+    #resume-sec2, #resume-sec3{
+        margin-top: 27vh;
+    }
+
+    #social1{
+        display: none;
+    }
+
+    #icon-live{
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        height: 70px;
+        width: 70px;
+    }
+
+    #text-live{
+        display: none;
+    }
+
+    .resume{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 45vh;
+        color: #FFFFFF;
+        height: max-content;
+        width: 75%;
+    }
+
+    .categorie{
+        background: #E86E25;
+        width: max-content;
+        padding: 2px 10px 2px 10px;
+        border-radius: 30px;
+        font-size: small;
+        text-align: center;
+        margin: 0 0 10px 0;
+    }
+
+    .center{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .centered{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .text{
+        font-size: x-large;
+        font-weight: 900;
+    }
+
+    .play{
+        cursor: pointer;
+    }
+
+    .song{
+        text-align: center;
+    }
+
+    .song-title{
+        margin: 4px 0 20px 0;
+    }
+
+    .buy{
+        background: #642D91;
+        padding: 5px 25px 5px 25px;
+        border-radius: 5px;
+        font-size: large;
+        cursor: pointer;
+        margin-right: auto;
+        margin-left: auto;
+        width: fit-content;
+    }
+
+    .see-more{
+        display: none;
+    }
+
+    .social3{
+        width: auto;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .facebook, .twitter, .whatsapp{
+        height: 30px;
+        margin-right: 15px;
+    }
+
+    .see-more2{
+        color: #FFFFFF; 
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .voir-plus{
+        font-size: small;
+        margin-top: 8px;
+        margin-bottom: 10vh;
+    }
+}

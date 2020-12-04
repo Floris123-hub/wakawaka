@@ -1,0 +1,177 @@
+html, head, body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+/*On large screens like tablet, laptop, large screen laptop ...*/
+
+@media screen and
+(min-width: 768px) and
+(max-width: 1600px) and
+(min-device-width: 768px) and
+(max-device-width: 1600px){
+    h5{
+        font-weight: lighter;
+        text-align: right;
+        margin-right: 10px;
+        margin-top: 8px;
+        color: #888787;
+    }
+
+    h4{
+        font-size: 27px;
+        font-weight: bold;
+        margin-top: 35px;
+    }
+
+    button{
+        margin-top: 5px;
+        cursor: pointer;
+    }
+
+    #logout{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: -1px;
+
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    #box{
+        position: absolute;
+        width: 370px;
+        height: 230px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        text-align: center;
+
+        background: #FFFFFF;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        border-radius: 3px;
+        margin: auto;
+    }
+
+    #disconnect{
+        border: none;
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: medium;
+        width: 150px;
+        height: 50px;
+        left: 543px;
+        top: 460px;
+        margin-right: 15px;
+
+        background: #E86E25;
+        border-radius: 3px;
+    }
+
+    #cancel{
+        margin-left: 15px;
+        font-size: medium;
+        font-weight: bold;
+        color: #E86E25;
+        width: 150px;
+        height: 50px;
+        left: 736px;
+        top: 460px;
+
+
+        border: 1px solid #E86E25;
+        box-sizing: border-box;
+        border-radius: 3px;
+    }
+}
+
+
+/*On small screens like mobiles L, M or S*/
+
+@media screen and
+(min-width: 320px) and
+(max-width: 767px),
+(min-device-width: 320px) and
+(max-device-width: 767px){
+    h5{
+        font-weight: lighter;
+        font-size: small;
+        text-align: right;
+        margin-right: 5%;
+        margin-top: 8px;
+        color: #888787;
+    }
+
+    h4{
+        font-size: large;
+        font-weight: bold;
+        margin: 0 0 0 0;
+    }
+
+    button{
+        margin-top: 5%;
+        cursor: pointer;
+        padding: 10px 20px 10px 20px;
+    }
+
+    #logout{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: -1px;
+
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    #box{
+        position: absolute;
+        max-width: 50%;
+        height: 30%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        text-align: center;
+        background: #FFFFFF;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        margin: auto;
+    }
+
+    #disconnect{
+        border: none;
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: 15px;
+        width: max-content;
+        height: max-content;
+        left: 543px;
+        top: 460px;
+        margin-right: 15px;
+
+        background: #E86E25;
+        border-radius: 3px;
+    }
+
+    #cancel{
+        margin-left: 15px;
+        font-size: 15px;
+        font-weight: bold;
+        color: #E86E25;
+        width: max-content;
+        height: max-content;
+
+        left: 736px;
+        top: 460px;
+
+
+        border: 1px solid #E86E25;
+        box-sizing: border-box;
+        border-radius: 3px;
+    }
+}

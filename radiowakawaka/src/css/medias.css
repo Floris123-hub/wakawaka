@@ -1,0 +1,313 @@
+html,
+head,
+body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    font-family: Nunito, sans-serif;
+}
+
+* {
+    font-family: Nunito, sans-serif;
+}
+
+@keyframes slideOut{
+    0%{
+        transform: rotate(0) translateX(100%);
+        opacity: 0;
+        }
+    100%{
+        transform: translateX(1px);
+        opacity: 1;
+        }
+}
+
+/* #menu{
+    animation: slideOut 1s forwards 0s linear;
+} */
+
+
+@keyframes slideIn{
+    0%{
+        transform: translateX(0%);
+        opacity: 1;
+        }
+    100%{
+        transform: rotate(xx) translateX(100%);
+        opacity: 0;
+        }
+}
+
+/* #menu{
+    animation: slideIn 1s forwards 0s linear;
+} */
+
+
+/*On large screens like tablet, laptop, large screen laptop ...*/
+
+@media screen and
+(min-width: 768px) and
+(max-width: 1600px) and
+(min-device-width: 768px) and
+(max-device-width: 1600px) {
+    body {
+        position: absolute;
+        background: #FFFFFF;
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+    .header {
+        padding: 15px;
+        height: 30px;
+    }
+    .logo {
+        margin-left: 10px;
+    }
+    .menu {
+        float: right;
+        margin-top: -10px;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .audio {
+        position: absolute;
+        height: 75%;
+        width: 64%;
+        left: 18%;
+    }
+    .lecteur {
+        width: 100%;
+        height: 77%;
+    }
+    .cover {
+        height: 100%;
+        width: 100%;
+    }
+    .artist {
+        font-weight: 900;
+        margin-top: 10px;
+        margin-bottom: 0;
+        letter-spacing: 0.1px;
+        color: black;
+        margin-left: 0;
+    }
+    .titre {
+        margin: 0;
+        font-weight: lighter;
+        font-size: small;
+    }
+    .download-button {
+        border: none;
+        border-radius: 3px;
+        background: #642D91;
+        margin-top: 13px;
+        padding: 8px;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+    .download {
+        height: 15px;
+        margin: 0 5px;
+        float: left;
+    }
+    .link {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight: bold;
+        padding: 0 3px;
+    }
+    .partage {
+        position: absolute;
+        height: max-content;
+        width: 370px;
+        margin-top: 30px;
+        left: 25%;
+        font-weight: bold;
+    }
+    .partager {
+        float: right;
+        margin-top: -5px;
+    }
+    .social {
+        height: 30px;
+        width: 30px;
+        margin-left: 25px;
+    }
+    .orange, .violet {
+        width: 99.5%;
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+    }
+    .orange {
+        color: #E86E25;
+        border: solid 3px #E86E25;
+        margin-bottom: 5px;
+    }
+    .violet {
+        color: #642D91;
+        border: solid 3px #642D91;
+    }
+    .pause {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+    }
+    #lecture {
+        position: absolute;
+        top: 10px;
+        left: 60px;
+        color: #FFFFFF;
+    }
+    #artist-cover,
+    #titre-cover {
+        margin: 0;
+    }
+    #artist-cover {
+        font-weight: 600;
+    }
+    #titre-cover {
+        font-weight: 100;
+    }
+}
+
+
+/*On small screens like mobiles L, M or S*/
+
+@media screen and
+(min-width: 320px) and
+(max-width: 767px),
+(min-device-width: 320px) and
+(max-device-width: 767px){
+    body{
+        height: max-content;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    a{
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    .header {
+        padding: 20px 25px 40px 30px;
+    }
+
+    .menu {
+        float: right;
+        margin-top: -10px;
+        cursor: pointer;
+    }
+    .audio {
+        height: 85%;
+        width: 86%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-flow: column;
+    }
+    .lecteur {
+        width: 100%;
+        height: max-content;
+    }
+    .cover {
+        width: 100%;
+    }
+
+    .artist, .titre{
+        color: black;
+        margin: 0;
+        letter-spacing: 0;
+    }
+
+    .download-button {
+        border: none;
+        border-radius: 3px;
+        background: #642D91;
+        font-weight: 900;
+        font-size: 17px;
+        padding: 5px 8px 5px 8px;
+        color: #FFFFFF;
+        cursor: pointer;
+        height: 40px;
+    }
+
+    .download {
+        margin: 2px 5px -3px 5px;
+    }
+
+    .link {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight: 900;
+        padding: 0 3px;
+        bottom: 13%;
+        margin-top: 40px;
+        float: left;
+    }
+
+    .partage {
+        height: max-content;
+        font-weight: 900;
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .partager {
+        float: right;
+        margin-top: -10px;
+    }
+
+    .social {
+        height: 30px;
+        width: 30px;
+        margin-left: 15px;
+    }
+
+    .orange, .violet {
+        width: 98.4%;
+        margin: 0;
+    }
+
+    .orange {
+        color: #E86E25;
+        border: solid 5px #E86E25;
+    }
+
+    .violet {
+        color: #642D91;
+        border: solid 5px #642D91;
+    }
+
+    .pause {
+        position: absolute;
+        top: 32vh;
+        left: 43vw;
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+    }
+
+    #lecture {
+        position: absolute;
+        top: 40vh;
+        left: 36vw;
+        text-align: center;
+    }
+
+    #artist-cover,
+    #titre-cover {
+        margin: 0;
+        color: #FFFFFF;
+    }
+}

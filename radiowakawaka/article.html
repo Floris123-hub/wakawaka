@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Article</title>
+    <link rel="stylesheet" href="src/css/article.css">
+    <link rel="stylesheet" href="src/css/menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+<a href="index.html">
+    <img src="src/img/logo-mini.png" alt="logo" id="logo">
+</a>
+<a>
+    <div id="logo-menu" onclick="document.getElementById('menu').style.display = 'block'; anime()">
+        <svg style="cursor:pointer;" fill="none" height="50" id="menu-burger" viewBox="0 0 50 50" width="50" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="25" cy="25" fill="white" r="25"/>
+            <rect fill="#E86E25" height="3" width="25" x="13" y="15"/>
+            <rect fill="#E86E25" height="3" width="25" x="13" y="23"/>
+            <rect fill="#E86E25" height="3" width="25" x="13" y="31"/>
+        </svg>
+    </div>
+</a>
+
+<div id="menu" style="display: none; z-index: 9; position:fixed; animation: slideOut 1s forwards 0s linear;">
+    <svg style="cursor: pointer" onclick="document.getElementById('menu').style.display = 'none'; anime()" id="menu-close" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="25" cy="25" r="25" fill="white"/>
+        <rect x="15" y="33" width="25" height="3" transform="rotate(-45 15 33)" fill="#E86E25"/>
+        <rect x="17" y="15" width="25" height="3" transform="rotate(45 17 15)" fill="#E86E25"/>
+    </svg>
+
+    <div id="search">
+        <svg id="search-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.33738 14.5205L5.05038 10.9505C6.14156 11.8684 7.51448 12.3713 8.94376 12.3713C12.2831 12.3713 15 9.65445 15 6.31509C15 2.97573 12.2831 0.25885 8.94376 0.25885C5.6044 0.25885 2.88751 2.97573 2.88751 6.31509C2.88751 7.56874 3.26563 8.7634 3.98343 9.78479L0.242249 13.3819C0.0861029 13.5323 -5.8904e-07 13.7345 -5.98513e-07 13.9512C-6.07479e-07 14.1563 0.0782035 14.3509 0.220394 14.4987C0.522415 14.8125 1.02324 14.8225 1.33738 14.5205ZM13.4201 6.31509C13.4201 8.78341 11.4121 10.7914 8.94376 10.7914C6.47544 10.7914 4.4674 8.78341 4.4674 6.31509C4.4674 3.84678 6.47544 1.83874 8.94376 1.83874C11.4121 1.83874 13.4201 3.84678 13.4201 6.31509Z"
+                  fill="white"/>
+        </svg>
+        <input id="search-input" type="search" onkeyup="search()">
+    </div>
+    <ul id="list" style="display: none; background-color: #FFFFFF;"></ul>
+
+    <h2>Lifestyle</h2>
+    <h2>People</h2>
+    <h2>Buzz</h2>
+
+    <svg id="hr" width="390" height="1" viewBox="0 0 390 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="-4.37114e-08" y1="0.5" x2="390" y2="0.499966" stroke="white" stroke-opacity="0.5"/>
+    </svg>
+
+
+    <h2>Playlist</h2>
+    <h2>Vidéos</h2>
+    <h2>Téléchargements</h2>
+
+    <svg id="hr" width="390" height="1" viewBox="0 0 390 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="-4.37114e-08" y1="0.5" x2="390" y2="0.499966" stroke="white" stroke-opacity="0.5"/>
+    </svg>
+
+    <div class="social2">
+        <img class="img" src="src/img/facebook.png" alt="facebook">
+        <img class="img" src="src/img/twitter.png" alt="twitter">
+        <img class="img" src="src/img/whatsapp.png" alt="whatsapp">
+    </div>
+</div>
+
+
+<div id="article-body">
+    <img src="src/img/nicki2.png" alt="nicki minaj" id="nicki1">
+    <h1 class="titre1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+    <h3 class="titre2">Nunc in efficitur </h3>
+    <p class="paragraphe">Praesent in libero aliquet, aliquet augue non, faucibus metus. Duis rutrum ornare lectus et
+        mollis. Duis
+        pellentesque lacus sed ligula rutrum blandit eu ac arcu. Ut ultricies at elit ac porttitor. Cras laoreet
+        tristique nunc et consequat. Curabitur egestas tempor leo vel maximus. Etiam bibendum pulvinar aliquam. Aliquam
+        elementum ante vel dui fringilla, blandit rutrum augue malesuada. Sed ultrices, turpis et laoreet aliquet, dolor
+        erat sodales ex, quis accumsan velit libero nec felis. Donec dapibus tortor eros, dignissim vehicula ante
+        tincidunt sed. Aenean fermentum sed nulla at pharetra.</p>
+
+    <p class="paragraphe2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in efficitur odio, sit amet
+        fringilla ante. In hac habitasse platea dictumst. Curabitur blandit eu nisi ut laoreet. Suspendisse nec ex sed
+        nisi iaculis consequat placerat sed massa. Nam dapibus, orci ut interdum ornare, libero lectus imperdiet quam,
+        molestie vulputate est tellus placerat lorem. Aliquam erat volutpat. Nulla dictum at risus at elementum.
+        Pellentesque aliquam rhoncus nibh, ut finibus odio varius vitae. Suspendisse pulvinar finibus sem, sagittis
+        euismod est vestibulum in. Donec suscipit vitae purus in vehicula. Nulla facilisi. Aenean consectetur placerat
+        eros sed tristique. Vivamus ultricies elementum eleifend.</p>
+
+    <p class="paragraphe">Praesent in libero aliquet, aliquet augue non, faucibus metus. Duis rutrum ornare lectus et
+        mollis. Duis
+        pellentesque lacus sed ligula rutrum blandit eu ac arcu. Ut ultricies at elit ac porttitor. Cras laoreet
+        tristique nunc et consequat. Curabitur egestas tempor leo vel maximus. Etiam bibendum pulvinar aliquam. Aliquam
+        elementum ante vel dui fringilla, blandit rutrum augue malesuada. Sed ultrices, turpis et laoreet aliquet, dolor
+        erat sodales ex, quis accumsan velit libero nec felis. Donec dapibus tortor eros, dignissim vehicula ante
+        tincidunt sed. Aenean fermentum sed nulla at pharetra.</p>
+
+    <video class="video" controls>
+        <source src="src/videos/Nicki%20Minaj%20-%20Anaconda%20-%20YouTube.mkv" type="video/mp4">
+    </video>
+
+    <p class="paragraphe">Fusce porttitor, nibh posuere interdum cursus, mauris sapien condimentum tellus, vel laoreet
+        eros mauris ac
+        tortor. Proin vitae scelerisque nibh. Quisque ac vulputate enim, ut viverra sem. Phasellus ac cursus lorem. Cras
+        pellentesque sem vel odio consequat fermentum. Suspendisse in felis interdum, scelerisque turpis id, facilisis
+        lorem. Phasellus gravida mattis sem vitae posuere. Maecenas ac odio mi. Phasellus in fringilla orci, et luctus
+        velit. Vivamus condimentum neque quis tellus rutrum commodo. Praesent in libero aliquet, aliquet augue non,
+        faucibus metus. Duis rutrum ornare lectus et mollis. Duis pellentesque lacus sed ligula rutrum blandit eu ac
+        arcu. Ut ultricies at elit ac porttitor. Cras laoreet tristique nunc et consequat. Curabitur egestas tempor leo
+        vel maximus. Etiam bibendum pulvinar aliquam. </p>
+
+    <p class="paragraphe2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in efficitur odio, sit amet
+        fringilla ante. In hac habitasse platea dictumst. Curabitur blandit eu nisi ut laoreet. Suspendisse nec ex sed
+        nisi iaculis consequat placerat sed massa. Nam dapibus, orci ut interdum ornare, libero lectus imperdiet quam,
+        molestie vulputate est tellus placerat lorem. Aliquam erat volutpat. Nulla dictum at risus at elementum.
+        Pellentesque aliquam rhoncus nibh, ut finibus odio varius vitae. Suspendisse pulvinar finibus sem, sagittis
+        euismod est vestibulum in. Donec suscipit vitae purus in vehicula. Nulla facilisi. Aenean consectetur placerat
+        eros sed tristique. Vivamus ultricies elementum eleifend.</p>
+
+    <h4 id="signature">Par Liza Boni, publié le 12/02/2019</h4>
+
+    <div id="sharing">
+        Vous avez aimé ? Partagez:
+        <div class="share">
+
+            <svg class="shr" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.9999 0C31.0462 0 40 8.95499 40 20.0001C40 31.0464 31.0462 40 19.9999 40C8.95362 40 0 31.0462 0 20.0001C0 8.95499 8.95376 0 19.9999 0Z" fill="#642D91"/>
+                <path d="M22.4343 13.7687H25.0119V9.96118H21.9819V9.97491C18.3106 10.1049 17.5582 12.1687 17.4919 14.3362H17.4843V16.2375H14.9844V19.9662H17.4843V29.9611H21.2519V19.9662H24.3381L24.9343 16.2375H21.2531V15.0888C21.2531 14.3562 21.7405 13.7687 22.4343 13.7687Z" fill="white"/>
+            </svg>
+
+            <svg class="shr" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.0008 39.9996C31.0464 39.9996 40.0006 31.0454 40.0006 19.9998C40.0006 8.95423 31.0464 0 20.0008 0C8.9552 0 0.000976562 8.95423 0.000976562 19.9998C0.000976562 31.0454 8.9552 39.9996 20.0008 39.9996Z" fill="#642D91"/>
+                <path d="M32.2523 14.3734C31.3953 14.7534 30.4733 15.0105 29.5064 15.1253C30.4936 14.5338 31.2512 13.5979 31.6088 12.481C30.6851 13.0289 29.6615 13.4265 28.5731 13.6407C27.701 12.712 26.4586 12.1316 25.0828 12.1316C22.4432 12.1316 20.3023 14.2725 20.3023 16.9121C20.3023 17.2868 20.3447 17.6515 20.4267 18.0016C16.4537 17.8023 12.931 15.8992 10.573 13.0061C10.1615 13.712 9.92553 14.5338 9.92553 15.4098C9.92553 17.0679 10.7701 18.5318 12.0521 19.3888C11.2689 19.3642 10.5312 19.1492 9.88703 18.7902C9.88667 18.8106 9.88667 18.8309 9.88667 18.8508C9.88667 21.1671 11.5352 23.0991 13.7217 23.538C13.321 23.6478 12.8978 23.7059 12.4625 23.7059C12.1538 23.7059 11.8546 23.6763 11.563 23.6207C12.1712 25.5195 13.9363 26.9017 16.0287 26.9405C14.3923 28.2229 12.3313 28.9869 10.091 28.9869C9.70592 28.9869 9.32444 28.9645 8.95117 28.9199C11.0657 30.2768 13.5791 31.0679 16.2786 31.0679C25.0717 31.0679 29.8804 23.7836 29.8804 17.4658C29.8804 17.2586 29.8758 17.0522 29.8665 16.8476C30.8013 16.1738 31.6117 15.332 32.2523 14.3734Z" fill="#F1F2F2"/>
+            </svg>
+
+            <svg class="shr" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.005 0H19.995C8.9675 0 0 8.97 0 20C0 24.375 1.41 28.43 3.8075 31.7225L1.315 39.1525L9.0025 36.695C12.165 38.79 15.9375 40 20.005 40C31.0325 40 40 31.0275 40 20C40 8.9725 31.0325 0 20.005 0Z" fill="#642D91"/>
+                <path d="M31.6434 28.2425C31.1609 29.605 29.2459 30.735 27.7184 31.065C26.6734 31.2875 25.3084 31.465 20.7134 29.56C14.8359 27.125 11.0509 21.1525 10.7559 20.765C10.4734 20.3775 8.38086 17.6025 8.38086 14.7325C8.38086 11.8625 9.83836 10.465 10.4259 9.86496C10.9084 9.37246 11.7059 9.14746 12.4709 9.14746C12.7184 9.14746 12.9409 9.15996 13.1409 9.16996C13.7284 9.19496 14.0234 9.22996 14.4109 10.1575C14.8934 11.32 16.0684 14.19 16.2084 14.485C16.3509 14.78 16.4934 15.18 16.2934 15.5675C16.1059 15.9675 15.9409 16.145 15.6459 16.485C15.3509 16.825 15.0709 17.085 14.7759 17.45C14.5059 17.7675 14.2009 18.1075 14.5409 18.695C14.8809 19.27 16.0559 21.1875 17.7859 22.7275C20.0184 24.715 21.8284 25.35 22.4759 25.62C22.9584 25.82 23.5334 25.7725 23.8859 25.3975C24.3334 24.915 24.8859 24.115 25.4484 23.3275C25.8484 22.7625 26.3534 22.6925 26.8834 22.8925C27.4234 23.08 30.2809 24.4925 30.8684 24.785C31.4559 25.08 31.8434 25.22 31.9859 25.4675C32.1259 25.715 32.1259 26.8775 31.6434 28.2425Z" fill="#FAFAFA"/>
+            </svg>
+
+        </div>
+    </div>
+
+    <div id="pub">
+        <img src="src/img/mtn.png" alt="MTN" class="pub-mtn">
+    </div>
+    <hr class="orange">
+    <hr class="violet">
+</div>
+
+<script src="src/js/animation_menu.js"></script>
+<script type="text/javascript" src="src/js/search.js"></script>
+</body>
+</html>
